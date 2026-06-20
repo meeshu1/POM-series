@@ -19,5 +19,5 @@ jobs:
             command: npm run addToCart
 
             #for particular browser
-            
+             
             browser: firefox
