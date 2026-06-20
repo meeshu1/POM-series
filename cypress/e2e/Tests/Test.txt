@@ -1,0 +1,20 @@
+
+first we created a page class in the pages folder with the weblocators and created methods for each
+made a fixture file of user data needed for registration
+import both of these in the test file and created the test suite
+
+problem with fixture, data is constant so to solve that
+used a faker library to generate new email each time
+
+
+now second part
+commands.js, mochawesome report, headless mode, running the test using script
+the whole login flow explains the above mentioned thing
+
+
+third part
+running cypress test on cicd using github actions
+customized script running on cicd using github actions
+running tests on multiple browsers using GA
+parallel execution using GA
+

@@ -1,0 +1,17 @@
+{
+    "login": {
+
+        "email": "ramisha@mailinator.com",
+        "password": "Test@123.."
+
+    },
+
+    "testCase": {
+
+        "successMessage": "Success: You have added iMac to your shopping cart!"
+    },
+
+    "product": {
+        "productName": "Mac" 
+    }
+}

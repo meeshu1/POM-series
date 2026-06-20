@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "addToCart": "npx cypress run --spec cypress/e2e/Tests/POMLogin.cy.js",
+    "registerFlow": "npx cypress run --spec cypress/e2e/Tests/POM1.cy.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "cypress": "^15.17.0"
+    "@faker-js/faker": "^10.5.0",
+    "cypress": "^15.17.0",
+    "cypress-mochawesome-reporter": "^4.0.2"
   }
 }

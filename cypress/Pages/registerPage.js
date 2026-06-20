@@ -56,4 +56,8 @@ export class registerPage {
 
     }
 
+    assertionCheck(){
+        cy.contains('Your Account Has Been Created!').should('be.visible')
+    }
+
 }
