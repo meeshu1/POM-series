@@ -1,0 +1,23 @@
+name: Particular script
+on: push
+jobs:
+  cypress-run:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      # Install dependencies with caching
+      # and run all Cypress tests
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v7
+
+        # for particular spec file
+
+        with:
+            command: npm run addToCart
+
+            #for particular browser
+            
+            browser: firefox
