@@ -20,4 +20,4 @@ jobs:
 
             #for particular browser
              
-            browser: firefox
+            browser: chromium
