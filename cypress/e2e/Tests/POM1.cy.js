@@ -1,7 +1,7 @@
 /// <reference types = 'cypress' />
 
 
-// 1st APPROACH
+// 1st APPROACH est
 //import the page class then create an obj
 import { registerPage } from "../../Pages/registerPage"
 const registerObj = new registerPage()
