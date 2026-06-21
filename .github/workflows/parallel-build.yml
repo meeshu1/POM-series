@@ -1,6 +1,8 @@
 name: Parallel scripts
 on: push
 
+
+# if you have multiple jobs u have to write the upload artifact for each job
 jobs:
   add-To-Cart-run:
     runs-on: ubuntu-24.04
@@ -14,6 +16,12 @@ jobs:
           command: npm run addToCart
           browser: firefox
 
+      - name: My reports 
+        uses: actions/upload-artifact@v7
+        with:
+          name: HTML Report - parallel - addToCart
+          path: cypress/reports/html # or path/to/artifact    
+
   register-run:
     runs-on: ubuntu-24.04
     steps:
@@ -25,3 +33,10 @@ jobs:
         with:
           command: npm run registerFlow
           browser: firefox
+
+      - name: My reports
+                                                  
+        uses: actions/upload-artifact@v7
+        with:
+          name: HTML Report - parallel registerFlow
+          path: cypress/reports/html # or path/to/artifact    

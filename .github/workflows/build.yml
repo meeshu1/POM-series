@@ -12,7 +12,10 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v7
       
+        # this is for when you have a single script
       - name: My reports 
+        # if always means if the first test fails it still moves on to the next
+        if: always()
         uses: actions/upload-artifact@v7
         with:
           name: HTML Report
