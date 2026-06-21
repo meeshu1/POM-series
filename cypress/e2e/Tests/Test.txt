@@ -18,3 +18,7 @@ customized script running on cicd using github actions
 running tests on multiple browsers using GA
 parallel execution using GA
 
+
+
+fourth part
+report upload using cicd
